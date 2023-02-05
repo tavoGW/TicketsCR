@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- hola mundo -->
+<html lang="es"> <!-- que la pagina esta en español -->
+    <head>
+        <title>Tickets CR</title>
+        <meta charset="UTF-8"/>  <!-- UTF 8 es para español -->
+        <meta name="description" content="Página de la tienda TechShop"/>  <!-- -->
+        <meta name="keyword" content="ufidelitas,Techshop,amazon"/>  <!--al poner amazon, sale la pagina -->
+        <link href="css/menu.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header class="encabezado">
+            <nav class='nav'>
+                <a href='index.html' class='logo nav-link'>Tickets CR</a> <!-- Primer titulo de la pagina -->
+                <ul class='nav-menu'>
+
+                    <li class='nav-menu-item'><a class='nav-link nav-menu-link' href="cine.html">Cine</a></li>
+                    <li class='nav-menu-item'><a class='nav-link nav-menu-link' href="partidos.html">Partidos</a></li>
+                    <li class='nav-menu-item'><a class='nav-link nav-menu-link' href="teatro.html">Teatro</a></li>
+                    <li class='nav-menu-item'><a class='nav-link nav-menu-link' href="acercade.html">Acerca de</a></li>
+                    <li class='nav-menu-item'><a class='nav-link nav-menu-link' href="Contactenos.html">Contactenos</a></li>
+                    <li class='nav-menu-item'><a class='nav-link nav-menu-link' href="registro.html">Registrarme</a></li>
+                    <li class='nav-menu-item'><a class='nav-link nav-menu-link' href="iniciar.html">Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+
+
+        <section class="contenido">
+            <h2>Nuestros eventos del día</h2>
+            <article>
+                <header>
+                    <h3>Doctor Strange in the Multiverse of Madness</h3>
+                </header>
+                <figure><!-- para que el celular detecte que es obtativo abrir la imagen -->
+                    <img src="images/doctor strange.png" alt=""/>
+                    <figcaption>6 de mayo de 2022</figcaption>
+                </figure>
+                <p>El Dr. Stephen Strange abre un portal al <cite>MULTIVERSO</cite> al utilizar un hechizo prohibido. Ahora, su equipo debe enfrentarse a una amenaza que podría destruirlo todo.
+                    dicha producción salió al mismo tiempo que Amadeus que realmente habla de la vida de Salieri, <small>Marvel Studios <time>2022</time></small>
+                </p><!-- el cite es para aclarar que es una sita dentro de un texto -->
+
+                <footer class="marginComprarTexto">
+                    <a href="#">Comprar</a>
+                </footer>
+            </article>
+            <article>
+
+                <header>
+                    <h3>Clasico Nacional</h3>
+                </header>
+                <figure><!-- para que el celular detecte que es obtativo abrir la imagen -->
+                    <img src="images/clasico nacional.png" alt=""/>
+                    <figcaption>3 de febrero de 2023</figcaption>
+                </figure>
+                <footer class="marginComprarTexto">
+                    <a href="#">Comprar</a>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h3 class="marginComprarTexto">Entradas Disponibles por evento</h3>
+                </header>
+                
+                    <table border="1" class="centrartabla">
+                        <thead>
+                            <tr>
+                                <th class='textocentrado'>Código</th>
+                                <th class='textocentrado'>Nombre</th>
+                                <th class='textocentrado'>Precio</th>
+                                <th class='textocentrado'>Cantidad</th>
+                                <th class='textocentrado'>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class='textocentrado'>1</td>
+
+                                <td>Doctor Strange in the Multiverse of Madness</td>
+                                <td class='textoderecha'>¢4.500</td>
+                                <td class='textocentrado'>20</td>
+                                <td><a href="/producto/elimina/1">Eliminar</a>
+                                    <a href="/producto/modifica/1">Modificar</a></td>
+                            </tr>
+                            <tr>
+                                <td class='textocentrado'>2</td>
+                                <td>Clasico Nacional</td>
+                                <td class='textoderecha'>¢15.000</td>
+                                <td class='textocentrado'>30</td>
+                                <td><a href="/producto/elimina/2">Eliminar</a>
+                                    <a href="/producto/modifica/2">Modificar</a></td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+                
+            </article>
+        </section>
+        <footer class="footer">
+            Tickets CR &COPY; 2023. San José, Costa Rica<!-- direccion -->
+        </footer>
+
+    </body>
+</html>

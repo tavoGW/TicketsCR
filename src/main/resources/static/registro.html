@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- hola mundo -->
+<html lang="es"> <!-- que la pagina esta en español -->
+    <head>
+        <title>Tickets CR</title>
+        <meta charset="UTF-8"/>  <!-- UTF 8 es para español -->
+        <meta name="description" content="Página de la tienda TechShop"/>  <!-- -->
+        <meta name="keyword" content="ufidelitas,Techshop,amazon"/>  <!--al poner amazon, sale la pagina -->
+        <link href="css/registro.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header class="encabezado">
+            <nav class='nav'>
+                <a href='index.html' class='logo nav-link'>Tickets CR</a> <!-- Primer titulo de la pagina -->
+                <ul class='nav-menu'>
+             
+                    <li class='nav-menu-item'><a class='nav-link nav-menu-link' href="cine.html">Cine</a></li>
+                    <li class='nav-menu-item'><a class='nav-link nav-menu-link' href="partidos.html">Partidos</a></li>
+                    <li class='nav-menu-item'><a class='nav-link nav-menu-link' href="teatro.html">Teatro</a></li>
+                    <li class='nav-menu-item'><a class='nav-link nav-menu-link' href="index.html">Home</a></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+
+        <section class="registro">
+            <h2 class="marginComprarTexto" style="color:darkblue">Registro</h2>
+            <article>
+                <header>
+                    <h3 class="marginComprarTexto">Ingrese los siguientes datos</h3>
+                </header>
+                <form action="/cliente/registro.jsp" method='post'>
+                    <input type='hidden' name='codigo' value='1'/>
+                    <fieldset>
+                        <label>Nombre</label>
+                        <input type='text' name='nombre' value='' size='30' />
+                    </fieldset>
+                    <fieldset>
+                        <label>Contraseña</label>
+                        <input type='text' name='nombre' value='' size='30' />
+                    </fieldset>
+                    <fieldset>
+                        <label>Correo Electronico</label>
+                        <input type='text' name='nombre' value='' size='30' />
+
+                    </fieldset>
+                     <fieldset>
+                        <label>Identificación</label>
+                        <input type='text' name='nombre' value='' size='30' />
+
+                    </fieldset>
+                    <fieldset>
+                        <label>Genero</label>
+                        <select name='nivel'>
+                            <option>Femenino</option>
+                            <option>Masculino</option>
+                            <option>No Binario</option>
+                        </select>
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                        <label>Terminos y Condiciones: </label>
+                        <label>Acepto</label>
+                        <input type='checkbox' name='futbol' value='ON'/>
+                        <label>No acepto</label>
+                        <input type='checkbox' name='baloncesto' value='ON'/>
+                        <br/>
+                        <label>Permite que le enviemos alertas sobre promociones o descuentos: </label>
+                        Si <input type='radio' name='visa' value='Si'/>
+                        No <input type='radio' name='visa' value='No'/>
+                    </fieldset>
+                    <input type='submit' value='Enviar'/>
+                </form>
+
+            </article>
+
+        </section>
+        <footer class="footer">
+            Tickets CR &COPY; 2023. San José, Costa Rica<!-- direccion -->
+        </footer>
+
+
+
+    </body>
+</html>
